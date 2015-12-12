@@ -6,13 +6,14 @@ function set (context, path, value) {
     return;
   }
 
-  var crumbs = path.split(/\.|\[|\]/g);
+  var crumbs = parseCrumbs(path);
   var i = -1;
   var len = crumbs.length;
   var result;
 
   while (++i < len) {
-    if (!crumbs[i]) continue;
+    if (crumbs[i].length == 0) continue;
+
     if (i + 1 < len && context[crumbs[i]] == undefined) {
       context[crumbs[i]] = {};
     }
@@ -24,4 +25,14 @@ function set (context, path, value) {
 
     context[crumbs[i]] = value;
   }
+}
+
+function parseCrumbs (path) {
+  var crumbs = path.split(/\.|\[|\]/g);
+
+  if (crumbs[crumbs.length - 1] == "") {
+    crumbs = crumbs.slice(0, -1);
+  }
+
+  return crumbs;
 }
