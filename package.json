@@ -1,0 +1,23 @@
+{
+  "name": "set-object-path",
+  "version": "0.0.0",
+  "description": "Set given (deep) object path",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "keywords": [
+    "object",
+    "path",
+    "change"
+  ],
+  "repository": {
+    "url": "git@github.com:azer/set-object-path.git",
+    "type": "git"
+  },
+  "author": "azer",
+  "license": "BSD",
+  "devDependencies": {
+    "prova": "^2.1.2"
+  }
+}
