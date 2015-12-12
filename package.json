@@ -1,5 +1,5 @@
 {
-  "name": "set-object-path",
+  "name": "change-object-path",
   "version": "0.0.0",
   "description": "Set given (deep) object path",
   "main": "index.js",
@@ -9,10 +9,11 @@
   "keywords": [
     "object",
     "path",
-    "change"
+    "change",
+    "set object path"
   ],
   "repository": {
-    "url": "git@github.com:azer/set-object-path.git",
+    "url": "git@github.com:azer/change-object-path.git",
     "type": "git"
   },
   "author": "azer",
