@@ -1,4 +1,4 @@
-## change-object-path
+## set-object-path
 
 Set given (deep) object path
 
@@ -7,13 +7,13 @@ See also: [get-object-path](http://github.com/azer/get-object-path), [change-obj
 ## Install
 
 ```bash
-$ npm install change-object-path
+$ npm install set-object-path
 ```
 
 ## Usage
 
 ```js
-var set = require('change-object-path')
+var set = require('set-object-path')
 var data = {
   title: 'My Products',
   products: {
