@@ -7,7 +7,7 @@ See also: [get-object-path](http://github.com/azer/get-object-path), [change-obj
 ## Install
 
 ```bash
-$ npm install set-object-path
+$ npm install azer/set-object-path
 ```
 
 ## Usage
