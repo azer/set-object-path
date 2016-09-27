@@ -9,7 +9,6 @@ function set (context, path, value) {
   var crumbs = parseCrumbs(path);
   var i = -1;
   var len = crumbs.length;
-  var result;
 
   while (++i < len) {
     if (crumbs[i].length == 0) continue;
